@@ -1,0 +1,55 @@
+<h1>Skycliffit</h1>
+<div class="col-md-3">
+    <input type="text" #f (keyup)="search(f.value)" placeholder="serch here">
+    <label>search</label>
+  </div>
+<div class="head">
+ <button class="btnadd" [routerLink]="['/adddisplay']" routerLinkActive="router-link-active" >Add new Location</button>
+</div>
+
+<div class="bodycontainer">
+
+<table class="table">
+    <thead>
+      <th>Name</th>
+      <th>Dec</th>
+      <th>Address1</th>
+      <th>Address2</th>
+      <th>City</th>
+      <th>state</th>
+      <th>Zip</th>
+      <th>Country</th>
+      <th>Phone1</th>
+      <th>Phone2</th>
+      <th>Fax</th>
+      <th>Website</th>
+
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let item of arr">
+        <td >{{item.Name}}</td>
+        <td  >{{item.Dec}}</td>
+        <td> {{item.Address1}}</td>
+        <td> {{item.Address2}}</td>
+        <td> {{item.City}}</td>
+        <td> {{item.State}}</td>
+        <td> {{item.Zip}}</td>
+        <td> {{item.Country}}</td>
+        <td> {{item.Phone1}}</td>
+        <td> {{item.Phone2}}</td>
+        <td> {{item.Fax}}</td>
+        <td> {{item.Website}}</td>
+
+      <p>
+          <button (click)='deleteTask(item)' type="button" class="btn btn-info" aria-label="Left Align">Delete</button>
+          <!-- <a href="editdisplay/editdisplay.component.html">Edit</a> -->
+          <button (click)='onEditTaskClick(item)' type="button" [routerLink]="['/editdisplay']" class="btn btn-default" aria-label="Left Align">Edit</button>
+        <!-- <a href=  <button (click)='onEditTaskClick(item)' type="button" class="btn btn-default" aria-label="Left Align">Edit</button> -->
+      </p>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

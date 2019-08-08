@@ -1,0 +1,134 @@
+<h1>Add Items</h1>
+<form (ngSubmit)="onAddDetail()" #f="ngForm">
+
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Location Name</label>
+      <input name="name" type="text" [(ngModel)]="name" class="form-control" id="inputEmail4" placeholder="Location">
+    </div>
+    <div class="form-group col-md-7">
+      <label for="inputPassword4">Description</label>
+      <input name="dec" type="text"  [(ngModel)]="dec" class="form-control" id="inputPassword4" placeholder="Description">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-4">
+    <label for="inputAddress">Address 1</label>
+    <input name="address1" type="text"  [(ngModel)]="address1" class="form-control" id="inputAddress" placeholder="Address 1">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputAddress2">Address 2</label>
+    <input name="address2" type="text"  [(ngModel)]="address2" class="form-control" id="inputAddress2" placeholder="Address 2">
+  </div>
+  <div class="form-group col-md-4">
+      <label for="inputAddress2">City</label>
+      <input name="city" type="text"  [(ngModel)]="city" class="form-control" id="inputAddress2" placeholder="City">
+    </div>
+</div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">State</label>
+      <input name="state" type="text"  [(ngModel)]="state" class="form-control" id="inputCity" placeholder="State">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Zip</label>
+      <input name="zip" type="text"  [(ngModel)]="zip" class="form-control" id="inputCity" placeholder="Zip">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputZip">Country</label>
+      <input name="country" type="text"  [(ngModel)]="country" class="form-control" id="inputZip" placeholder="Country">
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputCity">Website</label>
+        <input name="website" type="text"  [(ngModel)]="website" class="form-control" id="inputCity" placeholder="Website">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Phone 1</label>
+        <input name="phone1" type="text"  [(ngModel)]="phone1" class="form-control" id="inputCity" placeholder="Phone 1">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputZip">Phone 2</label>
+        <input name="phone2" type="text"  [(ngModel)]="phone2" class="form-control" id="inputZip" placeholder="Phone 2">
+      </div>
+    </div>
+  <div class="form-group col-md-2">
+    <label for="inputZip">Fax</label>
+    <input name="fax" type="text"  [(ngModel)]="fax" class="form-control" id="inputZip" placeholder="Fax">
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-info">Add</button>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary" >Cancel</button>
+</div>
+</form>
+<!-- <h1>Add Items</h1>
+<form (ngSubmit)="onAdddisplay(f)"   #f="ngForm">
+    <div class="form-group">
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Location Name</label>
+      <input type="text" [(ngModel)]="name" class="form-control" id="inputEmail4" placeholder="Location">
+    </div>
+    <div class="form-group col-md-7">
+      <label for="inputPassword4">Description</label>
+      <input type="text" [(ngModel)]="dec" class="form-control" id="inputPassword4" placeholder="Description">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-4">
+    <label for="inputAddress">Address 1</label>
+    <input type="text" [(ngModel)]="address1" class="form-control" id="inputAddress" placeholder="Address 1">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" [(ngModel)]="address2" class="form-control" id="inputAddress2" placeholder="Address 2">
+  </div>
+  <div class="form-group col-md-4">
+      <label for="inputAddress2">City</label>
+      <input type="text" [(ngModel)]="city" class="form-control" id="inputAddress2" placeholder="City">
+    </div>
+</div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">State</label>
+      <input type="text" [(ngModel)]="state" class="form-control" id="inputCity" placeholder="State">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Zip</label>
+      <input type="text" [(ngModel)]="zip" class="form-control" id="inputCity" placeholder="Zip">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputZip">Country</label>
+      <input type="text" [(ngModel)]="country" class="form-control" id="inputZip"placeholder="Country">
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputCity">Website</label>
+        <input type="text" [(ngModel)]="website" class="form-control" id="inputCity" placeholder="Website">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Phone 1</label>
+        <input type="text" [(ngModel)]="phone1" class="form-control" id="inputCity" placeholder="Phone 1">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputZip">Phone 2</label>
+        <input type="text" [(ngModel)]="phone2" class="form-control" id="inputZip"placeholder="Phone 2">
+      </div>
+    </div>
+  <div class="form-group col-md-2">
+    <label for="inputZip">Fax</label>
+    <input type="text" [(ngModel)]="fax" class="form-control" id="inputZip"placeholder="Fax">
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-info">Add</button>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Cancel</button>
+</div>
+</div>
+</form> -->
+

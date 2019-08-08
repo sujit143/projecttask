@@ -1,0 +1,119 @@
+<h1>Edit Items</h1>
+<form (ngSubmit)="onEditdisplay(f)"   #f="ngForm">
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Location Name</label>
+      <input type="text" [(ngModel)]="name" class="form-control" id="inputEmail4" placeholder="Location">
+    </div>
+    <div class="form-group col-md-7">
+      <label for="inputPassword4">Description</label>
+      <input type="text"  [(ngModel)]="name" class="form-control" id="inputPassword4" placeholder="Description">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-4">
+    <label for="inputAddress">Address 1</label>
+    <input type="text"  [(ngModel)]="name" class="form-control" id="inputAddress" placeholder="Address 1">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text"  [(ngModel)]="name" class="form-control" id="inputAddress2" placeholder="Address 2">
+  </div>
+  <div class="form-group col-md-4">
+      <label for="inputAddress2">City</label>
+      <input type="text"  [(ngModel)]="name" class="form-control" id="inputAddress2" placeholder="City">
+    </div>
+</div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">State</label>
+      <input type="text"  [(ngModel)]="name" class="form-control" id="inputCity" placeholder="State">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Zip</label>
+      <input type="text"  [(ngModel)]="name" class="form-control" id="inputCity" placeholder="Zip">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputZip">Country</label>
+      <input type="text"  [(ngModel)]="name" class="form-control" id="inputZip"placeholder="Country">
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputCity">Website</label>
+        <input type="text"  [(ngModel)]="name" class="form-control" id="inputCity" placeholder="Website">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Phone 1</label>
+        <input type="text"  [(ngModel)]="name" class="form-control" id="inputCity" placeholder="Phone 1">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputZip">Phone 2</label>
+        <input type="text"  [(ngModel)]="name" class="form-control" id="inputZip"placeholder="Phone 2">
+      </div>
+    </div>
+  <div class="form-group col-md-2">
+    <label for="inputZip">Fax</label>
+    <input type="text"  [(ngModel)]="name" class="form-control" id="inputZip"placeholder="Fax">
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-info">Add</button>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Cancel</button>
+</div>
+</form>
+<!-- <div class="container">
+  <h1>Edit Product</h1>
+    <form (ngSubmit)="onEditdisplay(f)"   #f="ngForm" >
+      <div class="form-group">
+        <Label>Product Name</Label>
+        <input name="Name"  [(ngModel)]="name" class="form-control" placeholder="Enter Name">
+
+      </div>
+      <div class="form-group">
+        <Label>Dec</Label>
+        <input name="Dec" [(ngModel)]="dec" type="number" class="form-control" placeholder="Enter Dec">
+      </div>
+      <div class="form-group">
+        <Label>Address</Label>
+        <input name="Address" [(ngModel)]="address" class="form-control" placeholder="Enter Addressc">
+      </div>
+      <div class="form-group">
+        <Label>City</Label>
+        <input name="City" [(ngModel)]="city" type="number" class="form-control" placeholder="Enter Product Qty">
+      </div>
+      <div class="form-group">
+        <Label>State</Label>
+        <input name="State" [(ngModel)]="state" class="form-control" placeholder="Enter Product mfg">
+      </div>
+      <div class="form-group">
+        <Label>Zip</Label>
+        <input name="Zip" [(ngModel)]="zip" class="form-control" placeholder="Enter Product Img">
+      </div>
+      <div class="form-group">
+          <Label>Country</Label>
+          <input name="Country" [(ngModel)]="country" class="form-control" placeholder="Enter Product Img">
+        </div>
+        <div class="form-group">
+            <Label>Phone</Label>
+            <input name="Phone" [(ngModel)]="phone" class="form-control" placeholder="Enter Product Img">
+          </div>
+          <div class="form-group">
+              <Label>Phone2</Label>
+              <input name="Phone2" [(ngModel)]="phone2" class="form-control" placeholder="Enter Product Img">
+            </div>
+            <div class="form-group">
+                <Label>Fax</Label>
+                <input name="Fax" [(ngModel)]="fax" class="form-control" placeholder="Enter Product Img">
+              </div>
+              <div class="form-group">
+                  <Label>Website</Label>
+                  <input name="Website" [(ngModel)]="website" class="form-control" placeholder="Enter Product Img">
+                </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update Product</button>
+      </div>
+    </form>
+  </div> -->
