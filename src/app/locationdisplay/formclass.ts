@@ -1,4 +1,5 @@
 export class Form {
+
   public constructor(
     public Name: string,
     public Dec: string,

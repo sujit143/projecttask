@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from "./formclass";
+
 import { Router } from '@angular/router';
+import { LocationService } from './location.service';
+import { Form } from './formclass';
 @Component({
   selector: 'app-locationdisplay',
   templateUrl: './locationdisplay.component.html',
@@ -20,16 +22,26 @@ export class LocationdisplayComponent implements OnInit {
    Fax: string="";
    Website: string="";
 
-    arr:Form[]=[
-      new Form("abc","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com"),
-      new Form("pqr","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com"),
-      new Form("xyz","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com")
-    ];
+    arrform:Form[]=[];
+
+    // arr:Form[]=[
+    //   new Form("abc","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com"),
+    //   new Form("pqr","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com"),
+    //   new Form("xyz","offshoredep","39 pipline","jhkgg","bangalor","kar","560086","india","080-614586","1234567898","","www.com")
+    // ];
   router: any;
-  constructor(private _router:Router) { }
+  constructor(private _router:Router, private _data:LocationService) { }
 
 
   ngOnInit() {
+
+    this.arrform = this._data.getAllLocations();
+
+    // this._data.getAllLocations().subscribe(
+    //   (data:Form[]) => {
+    //     this.arr = data;
+    //   }
+    // );
   }
   // onAddDetail(f) {
   //   this.arr.push(new Form(this.Name,this.Dec,this.Address1,this.Address2,this.City,this.State,this.Zip,this.Country,this.Phone1,this.Phone2,this.Fax,this.Website));

@@ -6,6 +6,8 @@ import { LocationdisplayComponent } from './locationdisplay/locationdisplay.comp
 import { EditdisplayComponent } from './locationdisplay/editdisplay/editdisplay.component';
 import { routing } from './routing';
 import { AdddisplayComponent } from './locationdisplay/adddisplay/adddisplay.component';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AdddisplayComponent } from './locationdisplay/adddisplay/adddisplay.com
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    InMemoryWebApiModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
